@@ -36,7 +36,7 @@ else
   echo "Running on Windows"
 fi
 
-if [ "$sys_vagrant" == "1" ]
+if [ "$sys_vagrant" == "0" ]
 then
 # on vagrant guest
   

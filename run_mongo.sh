@@ -7,21 +7,8 @@ sys_osx="0"
 
 system=$(uname -a)
 
-if [ "${system:0:15}" == "Linux precise32" ]
-then
-  sys_vagrant="1"  
-  echo "Running on Vagrant guest"
-  
-elif [ $short_system == "Darwin"  ]
-then
-  sys_osx="1"
-  echo "Running on Mac OSX"
-else
-  sys_cygwin="1"
-  echo "Running on Windows"
-fi
 
-if [ "$sys_vagrant" == "1" ]
+if [ "$sys_vagrant" == "0" ]
 then
 # on vagrant guest
 
